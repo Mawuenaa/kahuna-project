@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+</head>
+     <body><h1>Math Game</h1>
+    
+    
+    <div>
+        <h3>become an  excellent mathematician</h3>
+    <p>Problem: {{ current_problem }}</p>
+    <form action="/check_answer" method="post">
+        <input type="number" name="user_answer" step="any" required><br><br>
+        <button type="submit">Check Answer</button>
+    </form>
+    <p>Score: {{ score }} / Attempts: {{ attempts }}</p>
+    </div>
+    <footer><h2><a href="register">signup</a></h2></footer>
+    </body>
+   <audio autoplay loop>
+    <source src="{{url_for('static',filename= 'High Noon - TrackTribe.mp3')}}">
+    This broswerdoes not support HTML5 audio
+   </audio>
+
+
+   
+    
+</html>

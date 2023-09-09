@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Leaderboard</title>
+</head>
+<body>
+    <h1>Game Leaderboard</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Username</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for idx, entry in (leaderboard) %}
+            <tr>
+                <td>{{ idx  }}</td>
+                <td>{{ entry['username'] }}</td>
+                <td>{{ entry['score'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

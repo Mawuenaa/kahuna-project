@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game - Statistics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Math Game - Statistics</h1>
+    <p>Total Attempts: {{ analysis_results.total_attempts }}</p>
+    <p>Correct Attempts: {{ analysis_results.correct_attempts }}</p>
+    <p>Success Rate: {{ analysis_results.success_rate }}%</p>
+    <p>Average Difference: {{ analysis_results.average_difference }}</p>
+    <h2>Most Common Problems:</h2>
+    <ul>
+        {% for problem, count in analysis_results.problems_counter.most_common() %}
+            <li>{{ problem }}: {{ count }} times</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Game</a><br>
+    <a href="result">back to result</a>
+    <audio autoplay loop>
+        <source src="{{url_for('static',filename= 'High Noon - TrackTribe.mp3')}}">
+        This broswerdoes not support HTML5 audio
+       </audio>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game - Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Math Game - Result</h1>
+    <p>Score: {{ score }} / Attempts: {{ attempts }}</p>
+    <a href="/view_stats">View Statistics</a>
+</body>
+<audio autoplay loop>
+    <source src="{{url_for('static',filename= 'High Noon - TrackTribe.mp3')}}">
+    This broswerdoes not support HTML5 audio
+   </audio>
+</html>
+

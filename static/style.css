@@ -1,0 +1,116 @@
+/* Add your CSS styles here */
+div {
+    font-family: Arial, sans-serif;
+    
+   
+    margin: 0 auto;
+   
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: #000080;
+}   
+b{
+    text-align: right;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align:center;
+    height: 550px;
+    width: 500px;
+    margin: 0 auto;
+    background-color:whitesmoke;
+    border: 1px solid #0a0a0a;
+    border-radius: 5px;
+    font-size: large;
+    color: #000080;
+ 
+    
+
+}
+
+
+h3::after {
+   content: "\1F44c";
+   content: "\1F3B2";
+
+}
+
+
+form {
+    margin-top: 20px;
+}
+
+input[type="number"] {
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    
+}
+input[type="number"]:hover{
+    font-size: 20px;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color:orangered;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue;
+    font-size: 25px;
+}
+
+div {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+html {
+
+    background-color:white;
+    text-align: center;
+
+}
+audio{
+    background-color: #0056b3;
+}
+h3 {
+    animation: movedown 1s linear 1;
+    visibility: hidden;
+    visibility: visible;
+}
+@keyframes movedown{
+    0%{
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+h1{
+    animation: movedown 1s linear 1;
+    visibility: hidden;
+    visibility: visible;
+}
+p {
+    animation:movedown 1s linear 1;
+    visibility: hidden;
+    visibility: visible;
+}
